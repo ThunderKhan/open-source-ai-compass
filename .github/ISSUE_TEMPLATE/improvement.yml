@@ -1,0 +1,22 @@
+name: Improvement proposal
+description: Suggest a concrete improvement to the AI Compass
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should we solve?
+      description: Explain why the current experience could be better.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Be specific and keep the scope small enough to review.
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: How can we verify the improvement?

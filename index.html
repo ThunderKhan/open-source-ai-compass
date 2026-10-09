@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A beginner-friendly guide to open-source AI, local models, GitHub, and making your first contribution." />
+    <meta name="theme-color" content="#111c2b" />
+    <title>Open Source AI Compass — Learn. Explore. Contribute.</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Open Source AI Compass homepage"><span class="brand-mark" aria-hidden="true">✳</span> AI Compass</a>
+        <nav aria-label="Main navigation">
+          <a href="#explore">Explore</a>
+          <a href="#glossary">Glossary</a>
+          <a href="#contribute">Contribute</a>
+        </nav>
+        <a class="header-action" href="https://github.com/ThunderKhan/open-source-ai-compass" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </header>
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-inner">
+          <div>
+            <p class="eyebrow">A STUDENT-LED OPEN SOURCE PROJECT · DDUGU</p>
+            <h1>Your first steps into <em>open-source AI.</em></h1>
+            <p class="hero-copy">Find beginner-friendly tools, understand the language of AI, and learn how to make a real contribution. No hype. No prior experience needed.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#explore">Explore resources <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#contribute">Make a contribution</a></div>
+          </div>
+          <div class="hero-illustration" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><span class="compass-shape">✳</span><span class="orbit-label top-label">LEARN</span><span class="orbit-label bottom-label">BUILD</span></div>
+        </div>
+      </section>
+      <section class="intro-band" aria-label="Project statistics"><div class="container intro-grid"><p><strong id="resource-count">—</strong><span>curated resources</span></p><p><strong id="category-count">—</strong><span>learning paths</span></p><p><strong>100%</strong><span>free to browse</span></p></div></section>
+      <section id="explore" class="section container" aria-labelledby="explore-title">
+        <div class="section-heading"><div><p class="eyebrow">YOUR STARTING POINT</p><h2 id="explore-title">Explore the field guide.</h2><p>Short descriptions, trusted links, and clear first steps.</p></div></div>
+        <div class="filters"><label class="search-label" for="resource-search">Search resources</label><input id="resource-search" type="search" placeholder="Try Git, models, Python, safety…" autocomplete="off" /><div id="category-filters" class="category-filters" aria-label="Filter resources by category"></div></div>
+        <p id="results-status" class="results-status" role="status" aria-live="polite"></p>
+        <div id="resources-grid" class="card-grid" aria-live="off"></div>
+        <div id="empty-state" class="empty-state" hidden><h3>No resources found</h3><p>Try a different search term or choose All topics.</p><button type="button" id="reset-filters" class="button button-secondary">Clear filters</button></div>
+      </section>
+      <section id="glossary" class="section glossary-section" aria-labelledby="glossary-title"><div class="container"><p class="eyebrow">THE BASICS, EXPLAINED</p><h2 id="glossary-title">AI without the jargon.</h2><p class="section-lead">A quick reference for terms you will see across open-source projects.</p><div id="glossary-grid" class="glossary-grid"></div></div></section>
+      <section id="contribute" class="section container contribute-section" aria-labelledby="contribute-title"><div class="contribute-panel"><div><p class="eyebrow">THIS PROJECT IS YOURS TO IMPROVE</p><h2 id="contribute-title">Make your first pull request.</h2><p>Help fellow students by improving resources, documentation, accessibility, and features. Every contribution should solve a real problem.</p><a class="button button-primary" href="https://github.com/ThunderKhan/open-source-ai-compass/issues" target="_blank" rel="noopener noreferrer">Browse open issues ↗</a></div><ol class="steps"><li><strong>Pick an issue.</strong> Comment to ask if it is available.</li><li><strong>Make a focused change.</strong> Use the README and contribution guide.</li><li><strong>Test and describe your work.</strong> Include screenshots for UI changes.</li><li><strong>Open a pull request.</strong> A mentor can help with review.</li></ol></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>Open Source AI Compass · Made by students, for students.</span><span>Not affiliated with the creators of listed tools. Explore responsibly.</span></div></footer>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+{
+  "labels": [
+    {
+      "name": "good first issue",
+      "color": "7057ff",
+      "description": "Approachable for new contributors"
+    },
+    {
+      "name": "help wanted",
+      "color": "008672",
+      "description": "Welcomes community contributions"
+    },
+    {
+      "name": "hack-day",
+      "color": "ff8c00",
+      "description": "Prepared for the DDUGU Hack Day"
+    },
+    {
+      "name": "difficulty: beginner",
+      "color": "2ea44f",
+      "description": "Estimated 15\u201330 minutes"
+    },
+    {
+      "name": "difficulty: intermediate",
+      "color": "f1c40f",
+      "description": "Estimated 30\u201360 minutes"
+    },
+    {
+      "name": "difficulty: stretch",
+      "color": "d73a4a",
+      "description": "Estimated 60\u201390 minutes"
+    },
+    {
+      "name": "area: content",
+      "color": "0075ca",
+      "description": "Resources and glossary"
+    },
+    {
+      "name": "area: docs",
+      "color": "1d76db",
+      "description": "Contribution guidance and documentation"
+    },
+    {
+      "name": "area: ui",
+      "color": "d4c5f9",
+      "description": "Layout and accessibility"
+    },
+    {
+      "name": "area: tests",
+      "color": "5319e7",
+      "description": "Automated testing"
+    },
+    {
+      "name": "area: feature",
+      "color": "0e8a16",
+      "description": "New interactive functionality"
+    }
+  ],
+  "issues": [
+    {
+      "id": "glossary-data-leakage",
+      "title": "Explain data leakage in the glossary",
+      "body": "## Goal\n\nAdd a definition of **data leakage** so beginners know why training and evaluation data must be separated.\n\n## Acceptance criteria\n\n- [ ] Add one accurate, original definition to `src/data/glossary.js`.\n- [ ] Use an example or phrasing a beginner can understand in 1\u20132 sentences.\n- [ ] Ensure `npm run check` passes.\n\n## Helpful starting point\n\nRead existing entries first; avoid saying that every reuse of data is automatically leakage.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: content",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "glossary-precision-recall",
+      "title": "Introduce precision and recall in beginner-friendly terms",
+      "body": "## Goal\n\nDefine **precision** and **recall** separately, avoiding unexplained mathematical jargon.\n\n## Acceptance criteria\n\n- [ ] Add two distinct glossary entries to `src/data/glossary.js`.\n- [ ] Distinguish false positives from false negatives correctly.\n- [ ] Explain definitions clearly enough for a first-time ML learner.\n- [ ] Run `npm run check`.\n\n## Helpful starting point\n\nThink of spam filters: precision asks whether flagged messages are actually spam; recall asks how much spam was found.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: content",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "glossary-embeddings",
+      "title": "Add a clear definition of embeddings",
+      "body": "## Goal\n\nExplain what an embedding is and why similarity search uses them.\n\n## Acceptance criteria\n\n- [ ] Add one concise glossary entry.\n- [ ] Avoid the false claim that similar embeddings always imply equivalent meaning.\n- [ ] `npm run check` passes.\n\n## Helpful starting point\n\nAn embedding is commonly a vector representation, but its usefulness depends on the model and task.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: content",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "glossary-ai-agent",
+      "title": "Explain what an AI agent does",
+      "body": "## Goal\n\nHelp students distinguish a simple chatbot from an application that can use tools or take steps toward a goal.\n\n## Acceptance criteria\n\n- [ ] Add an `AI agent` entry to the glossary.\n- [ ] Mention that agents need safeguards and can make mistakes.\n- [ ] Keep it understandable and run content checks.\n\n## Helpful starting point\n\nA helpful definition discusses the ability to plan or use tools rather than promising autonomy.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: content",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "resource-python-tutorial",
+      "title": "Add the official Python tutorial to Foundations",
+      "body": "## Goal\n\nHelp students who are new to programming find a trustworthy Python starting point.\n\n## Acceptance criteria\n\n- [ ] Add a unique resource card with `id`, `title`, `category`, `level`, `url`, `description`, `firstStep`, and `tags`.\n- [ ] Use the official Python documentation (`https://docs.python.org/3/tutorial/`).\n- [ ] Make the first step concrete and beginner-appropriate.\n- [ ] `npm run check` passes; card appears in the site.\n\n## Helpful starting point\n\nUse the existing objects in `src/data/resources.js` as the schema; choose category `Foundations`.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: content",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "resource-pandas",
+      "title": "Add a beginner-friendly pandas learning resource",
+      "body": "## Goal\n\nStudents analyzing ML datasets often need help with tables and CSV files.\n\n## Acceptance criteria\n\n- [ ] Add an official pandas getting-started resource.\n- [ ] Use the official documentation domain `pandas.pydata.org`.\n- [ ] Description explains when pandas is useful without exaggeration.\n- [ ] Card renders and content checks pass.\n\n## Helpful starting point\n\nUse category `Tools` and level `Exploring`; include a first step.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: content",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "resource-numpy",
+      "title": "Add an official NumPy beginner resource",
+      "body": "## Goal\n\nThe guide should introduce the array library used in many Python ML workflows.\n\n## Acceptance criteria\n\n- [ ] Add a valid, official NumPy beginner learning URL.\n- [ ] Explain NumPy arrays in plain language and suggest a tiny first exercise.\n- [ ] Avoid duplicate IDs or URLs; content validation passes.\n\n## Helpful starting point\n\nUse category `Tools`, and verify the destination manually before submitting.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: content",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "docs-contribution-glossary",
+      "title": "Add a copyable glossary-entry example to CONTRIBUTING.md",
+      "body": "## Goal\n\nBeginner contributors need a reference example showing how to add one valid glossary term.\n\n## Acceptance criteria\n\n- [ ] Add a short code example under a clear heading in `CONTRIBUTING.md`.\n- [ ] Explain commas, quotation marks, and keeping definitions original.\n- [ ] Ensure the example exactly matches `src/data/glossary.js` structure.\n- [ ] Do not copy a definition from another website.\n\n## Helpful starting point\n\nThe example should use a term not already in the glossary.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: docs",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "docs-mobile-contributors",
+      "title": "Document how to contribute using only the GitHub website",
+      "body": "## Goal\n\nSome students cannot install Git locally during the event.\n\n## Acceptance criteria\n\n- [ ] Expand the GitHub website workflow in `CONTRIBUTING.md` with a no-terminal editing example.\n- [ ] Mention that GitHub's interface can differ on mobile and desktop.\n- [ ] Explain how to locate CI test results after opening a PR.\n- [ ] Do not require any paid tool.\n\n## Helpful starting point\n\nAvoid screenshots unless they reflect the current website; prefer steps that remain stable.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: docs",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "docs-troubleshoot",
+      "title": "Write a first-time contributor troubleshooting guide",
+      "body": "## Goal\n\nStudents regularly hit confusion around forking, permissions, and file formatting.\n\n## Acceptance criteria\n\n- [ ] Create `docs/troubleshooting.md` with at least four realistic symptoms and remedies.\n- [ ] Include `failed checks`, `fork vs original`, `merge conflict`, and `my PR is not merged yet`.\n- [ ] Link the guide from `README.md`.\n- [ ] Use accurate GitHub advice; don't promise instant maintainer responses.\n\n## Helpful starting point\n\nKeep every remedy short and actionable.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: docs",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "docs-model-weights",
+      "title": "Explain open-source software versus open-weight AI",
+      "body": "## Goal\n\nThe distinction matters: model weights may be downloadable even if training data or source code is closed.\n\n## Acceptance criteria\n\n- [ ] Add `docs/open-source-vs-open-weight.md` with a concise comparison.\n- [ ] Include a concrete list of what to inspect on a model card (license, acceptable use, limitations).\n- [ ] Link this document from the README.\n- [ ] Avoid naming a specific model as open source without verifying its license.\n\n## Helpful starting point\n\nYou can reference the existing glossary entry as a starting point.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: docs",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "docs-resource-criteria",
+      "title": "Create a quality checklist for future resource submissions",
+      "body": "## Goal\n\nA curated directory needs consistent standards and fewer broken or promotional links.\n\n## Acceptance criteria\n\n- [ ] Create `docs/resource-review-checklist.md` with objective checks for accuracy, official URL, first step, category, duplicates, and accessibility.\n- [ ] Link it from `CONTRIBUTING.md`.\n- [ ] Clarify that maintainers can reject self-promotion or irrelevant submissions.\n\n## Helpful starting point\n\nThis checklist should help a mentor review an issue in under two minutes.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: beginner",
+        "area: docs",
+        "hack-day",
+        "good first issue"
+      ]
+    },
+    {
+      "id": "tests-search-cases",
+      "title": "Expand tests for search whitespace and capitalization",
+      "body": "## Goal\n\nThe search algorithm currently has only a few basic test cases; improve its regression coverage.\n\n## Acceptance criteria\n\n- [ ] Add at least five focused tests in `tests/utils.test.js` covering whitespace, uppercase, missing query, tags, and mixed category plus search.\n- [ ] Do not modify production functions unless tests uncover a real defect.\n- [ ] `npm run check` passes.\n\n## Helpful starting point\n\nPrefer assertions against controlled example data where feasible.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: tests",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "tests-validation-fixtures",
+      "title": "Make resource data validation testable with example fixtures",
+      "body": "## Goal\n\nThe current content validator runs as a script, which makes it harder to unit test invalid cases.\n\n## Acceptance criteria\n\n- [ ] Extract a pure validation function from `scripts/validate-content.mjs` into a module.\n- [ ] Add tests with intentionally invalid resource objects for duplicate IDs, missing tags, and non-HTTPS links.\n- [ ] Keep `npm run validate` behavior and error reporting working.\n- [ ] `npm run check` passes.\n\n## Helpful starting point\n\nThis involves refactoring, so make a small plan before editing.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: tests",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-sort",
+      "title": "Add sorting by title and learning level",
+      "body": "## Goal\n\nStudents should be able to see resources alphabetically or progress from beginner material toward advanced topics.\n\n## Acceptance criteria\n\n- [ ] Add an accessible sort selector near filters.\n- [ ] Support `Title A\u2013Z` and `Beginner first`; preserve search and category selection.\n- [ ] Do not mutate the exported `resources` array in place.\n- [ ] Add tests for sorting logic and verify the mobile layout.\n\n## Helpful starting point\n\nThe order `Start here`, `Exploring`, `Going deeper` is defined in `resources.js`.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-difficulty-filter",
+      "title": "Filter resources by learning level",
+      "body": "## Goal\n\nA beginner shouldn't need to scan advanced resources while preparing their first project.\n\n## Acceptance criteria\n\n- [ ] Add a level filter for `All levels`, `Start here`, `Exploring`, and `Going deeper`.\n- [ ] Combine it with existing category and search filters.\n- [ ] Update results count and empty state correctly.\n- [ ] Add pure-function tests for the combined filters.\n\n## Helpful starting point\n\nA select element may be more accessible and compact than another row of chips.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-search-shortcut",
+      "title": "Focus resource search with the slash keyboard shortcut",
+      "body": "## Goal\n\nFrequent users should be able to jump into search without clicking the input.\n\n## Acceptance criteria\n\n- [ ] Typing `/` focuses the search field only if the user is not typing in another editable field.\n- [ ] Pressing Escape while focused clears search (document your behavior).\n- [ ] Do not intercept shortcuts used by assistive technology without consideration.\n- [ ] Add a short visible hint and test manually.\n\n## Helpful starting point\n\nKeep event listeners in `src/main.js`; no external dependencies.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-glossary-filter",
+      "title": "Add a search box for glossary terms",
+      "body": "## Goal\n\nThe glossary has enough concepts that a student may want to find a term quickly.\n\n## Acceptance criteria\n\n- [ ] Add a labeled glossary search input.\n- [ ] Match term and definition case-insensitively.\n- [ ] Provide an accessible empty state and count.\n- [ ] Keep resource search independent; test the UI with a keyboard.\n\n## Helpful starting point\n\nReuse pure filtering logic where appropriate rather than duplicating fragile string handling.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-copy-link",
+      "title": "Add a copy-link action to each resource card",
+      "body": "## Goal\n\nParticipants should be able to share resources in chat without navigating away.\n\n## Acceptance criteria\n\n- [ ] Add a keyboard-accessible `Copy link` button to cards.\n- [ ] Use the Clipboard API safely; provide user feedback for success or failure.\n- [ ] Preserve the existing `Visit resource` action.\n- [ ] Check narrow mobile widths and test in a secure context.\n\n## Helpful starting point\n\nAvoid silently claiming success when clipboard access fails.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "ui-compact-mode",
+      "title": "Add a compact resource card view",
+      "body": "## Goal\n\nUsers browsing a large directory may want a quicker overview of resource names and descriptions.\n\n## Acceptance criteria\n\n- [ ] Provide a clearly labeled list/grid toggle.\n- [ ] Use a single source of resource data and preserve filters.\n- [ ] Ensure controls work with keyboard and screen readers.\n- [ ] Show resource titles, levels, and outbound links in both modes.\n\n## Helpful starting point\n\nDo not remove first steps without providing a way to access them.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: ui",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "ui-mobile-nav",
+      "title": "Improve small-screen navigation visibility",
+      "body": "## Goal\n\nCurrently the main navigation links are hidden below 580px; mobile users should still reach Explore, Glossary, and Contribute easily.\n\n## Acceptance criteria\n\n- [ ] Provide a usable navigation solution below 580px.\n- [ ] Keep header readable at 320px width.\n- [ ] Maintain keyboard focus order and accessible labels.\n- [ ] Include before/after screenshots at a narrow viewport.\n\n## Helpful starting point\n\nA wrapped set of links is acceptable; you do not need a complex hamburger menu.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: ui",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "ui-color-contrast",
+      "title": "Audit and improve small-text contrast",
+      "body": "## Goal\n\nSome muted descriptions and tags may be difficult to read on certain screens.\n\n## Acceptance criteria\n\n- [ ] Audit at least four text/background pairs (eyebrow, metadata, cards, footer) against WCAG AA normal-text contrast where applicable.\n- [ ] Make scoped CSS changes where needed without losing hierarchy.\n- [ ] Include before/after colors and calculation evidence in the PR.\n- [ ] Check hover and focus states.\n\n## Helpful starting point\n\nYou may use a trusted contrast checker; provide numeric ratios for changed pairs.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: intermediate",
+        "area: ui",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-favorites",
+      "title": "Save favorite resources on this device",
+      "body": "## Goal\n\nStudents want to return to resources they found helpful during the workshop.\n\n## Acceptance criteria\n\n- [ ] Provide a keyboard-accessible favorite action on each card.\n- [ ] Persist favorite IDs in localStorage with graceful fallback if storage is blocked.\n- [ ] Add a Favorites-only filter; invalid or deleted IDs should not break rendering.\n- [ ] Add pure helper tests for favorites matching; explain data storage clearly.\n\n## Helpful starting point\n\nStore only resource IDs, not personal information; do not require login.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: stretch",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-share-search",
+      "title": "Allow sharing filtered results through the URL",
+      "body": "## Goal\n\nA mentor should be able to send a search or topic filter link to a student.\n\n## Acceptance criteria\n\n- [ ] Persist search/category state in URL query parameters.\n- [ ] Read valid parameters on initial page load, ignoring unknown categories.\n- [ ] Update the URL without page reload or infinite event loops.\n- [ ] Add tests for encoding/decoding and verify browser back/forward navigation.\n\n## Helpful starting point\n\nUse the browser History API rather than a routing dependency.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: stretch",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "feature-export",
+      "title": "Export filtered resource metadata as JSON",
+      "body": "## Goal\n\nStudents preparing a study plan may want to save a machine-readable list of resources.\n\n## Acceptance criteria\n\n- [ ] Add a clearly labeled export button.\n- [ ] Export only currently displayed resources, not all items.\n- [ ] Create valid UTF-8 JSON with a stable schema; no personal information.\n- [ ] Handle empty results reasonably and revoke created object URLs.\n\n## Helpful starting point\n\nExplain in your PR how you verified the downloaded JSON parses correctly.\n\n## For first-time contributors\n\n1. Comment before starting so a mentor can assign the issue.\n2. Make one focused change and open a pull request.\n3. Link this issue, show what you tested, and explain your own work.\n\n*This is a real improvement task, not a PR-counting exercise. An opened PR is not automatically accepted.*",
+      "labels": [
+        "difficulty: stretch",
+        "area: feature",
+        "hack-day",
+        "help wanted"
+      ]
+    }
+  ]
+}

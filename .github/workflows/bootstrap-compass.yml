@@ -2,6 +2,8 @@ name: Bootstrap Open Source AI Compass
 on:
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/bootstrap-compass.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -303,7 +305,7 @@ jobs:
           PY
       - name: Commit prepared project
         run: |
-          git rm --ignore-unmatch .github/workflows/bootstrap-compass.yml
+          rm -f .github/workflows/ci.yml .github/workflows/pages.yml .github/workflows/seed-issues.yml
           git add -A
           git -c user.name="DDUGU Hack Day Bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "feat: initialize AI Compass and beginner contribution infrastructure"
           git push origin HEAD:main

@@ -881,6 +881,281 @@
         "difficulty: beginner",
         "area: docs"
       ]
+    },
+    {
+      "id": "term-cross-validation",
+      "title": "Explain cross-validation and why it helps model evaluation",
+      "body": "## Goal\n\nIntroduce evaluation across multiple data splits without making statistical promises.\n\n## Start here\n\n`src/data/glossary.js`\n\n## Acceptance criteria\n\n- [ ] Add a `Cross-validation` glossary term in 1–2 original sentences.\n- [ ] Explain why rotating validation splits may give a more reliable estimate than one split.\n- [ ] Avoid claiming that cross-validation completely prevents leakage.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "term-hyperparameter",
+      "title": "Define a hyperparameter using a clear example",
+      "body": "## Goal\n\nDistinguish settings chosen for training from values learned automatically.\n\n## Start here\n\n`src/data/glossary.js`\n\n## Acceptance criteria\n\n- [ ] Add `Hyperparameter` with a simple example such as the number of neighbors.\n- [ ] Explain that hyperparameters are configured or tuned rather than directly learned model parameters.\n- [ ] Keep wording accessible to students new to ML.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "term-classification",
+      "title": "Explain classification as a type of ML task",
+      "body": "## Goal\n\nMake category prediction understandable to beginners.\n\n## Start here\n\n`src/data/glossary.js`\n\n## Acceptance criteria\n\n- [ ] Add a concise `Classification` entry with a concrete example.\n- [ ] Distinguish labels/classes from continuous numerical predictions.\n- [ ] Avoid presenting accuracy as the only possible evaluation metric.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "term-regression",
+      "title": "Explain regression as predicting continuous values",
+      "body": "## Goal\n\nShow how regression differs from classification in everyday applications.\n\n## Start here\n\n`src/data/glossary.js`\n\n## Acceptance criteria\n\n- [ ] Add a `Regression` definition in plain language.\n- [ ] Use an example such as predicting travel time or temperature.\n- [ ] Do not conflate regression with a general trend line fitted to a chart.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "term-context-window",
+      "title": "Explain a language model's context window",
+      "body": "## Goal\n\nHelp students understand why models have limits on the text available in one interaction.\n\n## Start here\n\n`src/data/glossary.js`\n\n## Acceptance criteria\n\n- [ ] Add a `Context window` term.\n- [ ] Describe what can be included in the model's input context without making universal token limits.\n- [ ] Avoid suggesting that a larger context automatically makes responses correct.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "term-rag",
+      "title": "Explain retrieval-augmented generation (RAG)",
+      "body": "## Goal\n\nGive readers a grounded definition of retrieval plus response generation.\n\n## Start here\n\n`src/data/glossary.js`\n\n## Acceptance criteria\n\n- [ ] Add a `Retrieval-augmented generation (RAG)` term.\n- [ ] Describe retrieving relevant documents before a model generates an answer.\n- [ ] Explain that retrieval may still return irrelevant material or unsupported conclusions.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "term-confusion-matrix",
+      "title": "Explain a confusion matrix for classification",
+      "body": "## Goal\n\nPrepare learners to interpret classification mistakes.\n\n## Start here\n\n`src/data/glossary.js`\n\n## Acceptance criteria\n\n- [ ] Define a confusion matrix without relying on mathematical notation alone.\n- [ ] Mention how actual and predicted classes are compared.\n- [ ] Include a simple spam/non-spam intuition without confusing false positives and false negatives.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-jupyter",
+      "title": "Add Jupyter Notebook official beginner documentation",
+      "body": "## Goal\n\nStudents should discover interactive notebooks for Python learning.\n\n## Start here\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add a unique Jupyter documentation card with an official website URL.\n- [ ] Clarify the difference between a notebook interface and a hosted service.\n- [ ] Include an achievable beginner first step and correct level.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-matplotlib",
+      "title": "Add a Matplotlib introductory plotting tutorial",
+      "body": "## Goal\n\nData visualization is an essential early skill for investigating datasets.\n\n## Start here\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add a stable official Matplotlib introductory tutorial URL.\n- [ ] Suggest a tiny plot as the first step, not an elaborate AI project.\n- [ ] Use a unique resource ID and pass validation.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-fastapi",
+      "title": "Add the official FastAPI tutorial for serving Python apps",
+      "body": "## Goal\n\nStudents who finish Python basics may want to expose a small model behind an API.\n\n## Start here\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add an official FastAPI first-steps documentation link.\n- [ ] Classify it at an appropriate learning level and state prerequisites honestly.\n- [ ] Provide a modest first-step exercise and avoid duplicating other API resources.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-nist-risk",
+      "title": "Add the NIST AI Risk Management Framework overview",
+      "body": "## Goal\n\nResponsible AI resources should introduce risk assessment frameworks as well as incident examples.\n\n## Start here\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add an official NIST AI RMF introductory page.\n- [ ] Explain its purpose accurately without implying legal compliance or certification.\n- [ ] Use Responsible AI category and a suitable level.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-github-discussions",
+      "title": "Add official GitHub Discussions participation guidance",
+      "body": "## Goal\n\nNot every contribution starts with code; discussion and questions help communities.\n\n## Start here\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add one official GitHub documentation URL about discussions.\n- [ ] Explain when to use a discussion versus an issue or pull request.\n- [ ] Provide a first step involving respectful project participation.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-sklearn-model-selection",
+      "title": "Add a scikit-learn model-selection tutorial",
+      "body": "## Goal\n\nStudents should learn how to evaluate and choose models thoughtfully.\n\n## Start here\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add an official scikit-learn model-selection or cross-validation tutorial.\n- [ ] Explain how it extends beyond the site's existing getting-started card.\n- [ ] Provide a concrete task such as inspecting a cross-validation example.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "docs-fairness-worksheet",
+      "title": "Create a simple fairness evaluation worksheet",
+      "body": "## Goal\n\nGive students a discussion exercise about differing model errors across groups.\n\n## Start here\n\n`docs/FAIRNESS_WORKSHEET.md`\n\n## Acceptance criteria\n\n- [ ] Use fictional, non-sensitive sample predictions and simple error counts.\n- [ ] Ask what data might be missing and whether sample sizes are adequate.\n- [ ] Include thoughtful questions instead of declaring one fairness metric universally best.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-ci-faq",
+      "title": "Explain CI test failures in beginner-friendly language",
+      "body": "## Goal\n\nStudents may see red GitHub Actions checks for the first time.\n\n## Start here\n\n`docs/CI_FAQ.md`\n\n## Acceptance criteria\n\n- [ ] Explain what a failing check means and where to read GitHub Actions logs.\n- [ ] Show a tiny fictional `npm run check` failure and a safe troubleshooting flow.\n- [ ] Explain that rerunning without fixing a deterministic failure is not a solution.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-mentor-help-desk",
+      "title": "Create a mentor help-desk triage playbook",
+      "body": "## Goal\n\nMentors need a consistent way to assist many participants fairly.\n\n## Start here\n\n`docs/MENTOR_HELP_DESK.md`\n\n## Acceptance criteria\n\n- [ ] Define how to handle blocked setup, issue claims, PR conflicts and review requests.\n- [ ] Suggest a short triage queue without requiring participants' personal details.\n- [ ] Include escalation guidance for safety or inaccessible equipment.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-source-claims",
+      "title": "Write source-verification guidance for AI resource descriptions",
+      "body": "## Goal\n\nPrevent curated resource cards from spreading exaggerated claims.\n\n## Start here\n\n`docs/SOURCE_VERIFICATION.md`\n\n## Acceptance criteria\n\n- [ ] Explain how to verify official link destinations and describe prerequisites accurately.\n- [ ] Distinguish verified facts from opinions such as 'best tool'.\n- [ ] Include an example of rewriting a misleading description using neutral language.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-after-event",
+      "title": "Create a contribution continuity plan after Hack Day",
+      "body": "## Goal\n\nHelp the repository remain healthy after one day of student contributions.\n\n## Start here\n\n`docs/AFTER_HACK_DAY.md`\n\n## Acceptance criteria\n\n- [ ] Create practical steps for post-event PR review, closing duplicate issues, and crediting contributors.\n- [ ] Include a fair plan for unresolved PRs without promising automatic merges.\n- [ ] Suggest follow-up activities that don't require new funding.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-privacy-preflight",
+      "title": "Create a privacy checklist for student AI projects",
+      "body": "## Goal\n\nStudents should avoid accidentally sharing personal information in demo datasets and logs.\n\n## Start here\n\n`docs/PRIVACY_PREFLIGHT.md`\n\n## Acceptance criteria\n\n- [ ] Cover private messages, photos, student IDs, dataset permissions, screenshots, secrets and consent.\n- [ ] Include safe fictional-data alternatives for demos.\n- [ ] Avoid promising that local inference alone guarantees privacy.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "feature-category-counts",
+      "title": "Show resource counts beside category filter labels",
+      "body": "## Goal\n\nPeople should know how many resource cards each topic contains before choosing it.\n\n## Start here\n\n`src/main.js / src/utils.js`\n\n## Acceptance criteria\n\n- [ ] Show accurate counts for each category including All topics.\n- [ ] Decide and document whether counts reflect current search query; keep behavior consistent.\n- [ ] Keep button labels and `aria-pressed` clear and add a test for any pure helper.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: feature"
+      ]
+    },
+    {
+      "id": "feature-resource-tags",
+      "title": "Display resource tags on each directory card",
+      "body": "## Goal\n\nCurated resource tags currently help searching but are invisible during browsing.\n\n## Start here\n\n`src/main.js / src/styles.css`\n\n## Acceptance criteria\n\n- [ ] Display a small, readable set of relevant tags without overwhelming card layouts.\n- [ ] Escape values before inserting into HTML and keep external link usable.\n- [ ] Check 320px mobile width and keyboard navigation.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: feature"
+      ]
+    },
+    {
+      "id": "feature-sort-glossary",
+      "title": "Display glossary entries in alphabetical order",
+      "body": "## Goal\n\nFinding a glossary term should not require remembering insertion order.\n\n## Start here\n\n`src/main.js / src/utils.js`\n\n## Acceptance criteria\n\n- [ ] Render a copy of glossary entries sorted by term using locale-aware comparison.\n- [ ] Do not mutate the exported glossary array.\n- [ ] Add a small pure-function test including case differences.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: feature"
+      ]
+    },
+    {
+      "id": "feature-provider-domains",
+      "title": "Display source domains on external resource cards",
+      "body": "## Goal\n\nA domain hint helps students recognize where a learning resource will open.\n\n## Start here\n\n`src/main.js / src/utils.js`\n\n## Acceptance criteria\n\n- [ ] Extract and display a readable hostname from each valid resource URL.\n- [ ] Escape any rendered text and avoid confusing hostnames with endorsements.\n- [ ] Test a normal HTTPS URL and ensure link accessibility remains intact.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: feature"
+      ]
+    },
+    {
+      "id": "validator-duplicate-urls",
+      "title": "Reject duplicate resource URLs during content validation",
+      "body": "## Goal\n\nA curated directory should not list the same learning destination multiple times under different IDs.\n\n## Start here\n\n`scripts/validate-content.mjs / tests/`\n\n## Acceptance criteria\n\n- [ ] Update content validation to detect repeated normalized resource URLs.\n- [ ] Include a targeted regression test or fixture demonstrating a duplicate is rejected.\n- [ ] Document any intentional URL-normalization rules, and keep valid current entries passing.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: tests"
+      ]
+    },
+    {
+      "id": "feature-filter-keyboard-focus",
+      "title": "Preserve keyboard focus when selecting a category filter",
+      "body": "## Goal\n\nCurrently the category chips are recreated after selection, which can drop keyboard focus.\n\n## Start here\n\n`src/main.js`\n\n## Acceptance criteria\n\n- [ ] Ensure focus stays on the selected category control after changing filters.\n- [ ] Preserve `aria-pressed` states and do not trap keyboard navigation.\n- [ ] Test by selecting several category chips using only Tab, Shift+Tab, Enter or Space.\n- [ ] Run `npm run check` (or ask a mentor to run it) and report manual checks.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for an organizer or mentor to confirm. Claim one issue at a time. Open a focused PR linking the issue, document tests, and respond to feedback. Useful work matters more than issue or PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: ui"
+      ]
     }
   ]
 }

@@ -606,6 +606,281 @@
         "difficulty: beginner",
         "area: docs"
       ]
+    },
+    {
+      "id": "ui-touch-targets",
+      "title": "Increase tap targets for topic filter chips",
+      "body": "## Goal\n\nTouchscreen users should be able to select filters without precise tapping.\n\n## Starting point\n\n`src/styles.css`\n\n## Acceptance criteria\n\n- [ ] Make the interactive filter chips comfortably tappable on mobile without overlaps.\n- [ ] Preserve wrapping behavior on a 320px-wide screen.\n- [ ] Check keyboard focus remains visible and the selected state remains distinct.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: ui"
+      ]
+    },
+    {
+      "id": "ui-card-focus",
+      "title": "Highlight resource cards when a link receives keyboard focus",
+      "body": "## Goal\n\nHelp keyboard users see which card contains their focused link.\n\n## Starting point\n\n`src/styles.css`\n\n## Acceptance criteria\n\n- [ ] Add a visible `.resource-card:focus-within` treatment.\n- [ ] Avoid relying on color changes alone and preserve the existing focused link outline.\n- [ ] Demonstrate keyboard navigation across several cards.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: ui"
+      ]
+    },
+    {
+      "id": "ui-print",
+      "title": "Add a print-friendly view of resources and glossary",
+      "body": "## Goal\n\nStudents may want to print a reference sheet without dark hero backgrounds and navigation.\n\n## Starting point\n\n`src/styles.css`\n\n## Acceptance criteria\n\n- [ ] Add `@media print` styles for readable black-on-white text.\n- [ ] Show resource URLs in a legible way and avoid cutting cards across pages where practical.\n- [ ] Hide purely decorative sections without hiding the information users need.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: ui"
+      ]
+    },
+    {
+      "id": "ui-external-links",
+      "title": "Make external resource links understandable to screen readers",
+      "body": "## Goal\n\nResource links open new tabs; describe that behavior consistently without decorative clutter.\n\n## Starting point\n\n`src/main.js`\n\n## Acceptance criteria\n\n- [ ] Ensure accessible link text explains destination and new-tab behavior.\n- [ ] Hide decorative arrow glyphs from assistive technology where appropriate.\n- [ ] Verify both with keyboard navigation and the browser accessibility tree.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: ui"
+      ]
+    },
+    {
+      "id": "ui-glossary-anchors",
+      "title": "Make individual glossary definitions directly linkable",
+      "body": "## Goal\n\nMentors should be able to point students directly to an AI term.\n\n## Starting point\n\n`src/main.js`\n\n## Acceptance criteria\n\n- [ ] Give every glossary item a deterministic, unique URL fragment.\n- [ ] Provide an accessible, copyable term link that works after a refresh.\n- [ ] Avoid breaking the existing glossary rendering or generating duplicate IDs.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: feature"
+      ]
+    },
+    {
+      "id": "ui-zoom-reflow",
+      "title": "Fix any layout overflow at 200 percent browser zoom",
+      "body": "## Goal\n\nThe resource directory should remain usable when text and layout are enlarged.\n\n## Starting point\n\n`index.html / src/styles.css`\n\n## Acceptance criteria\n\n- [ ] Test desktop at 200% zoom with narrow viewport emulation.\n- [ ] Fix horizontal scrolling caused by long headings, labels or buttons, if found.\n- [ ] Document tested viewport sizes and screenshots in the PR.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: ui"
+      ]
+    },
+    {
+      "id": "ui-back-top",
+      "title": "Add a clear back-to-top link after the glossary",
+      "body": "## Goal\n\nLong resource lists make returning to the header tedious.\n\n## Starting point\n\n`index.html / src/styles.css`\n\n## Acceptance criteria\n\n- [ ] Add a keyboard-accessible link near the end of the glossary.\n- [ ] Use the existing `#top` target without JavaScript.\n- [ ] Ensure the link is visible on mobile and has an obvious focus indicator.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: ui"
+      ]
+    },
+    {
+      "id": "test-category-dedup",
+      "title": "Test category extraction on duplicate unsorted input",
+      "body": "## Goal\n\nThe category chips rely on consistent ordering and de-duplication.\n\n## Starting point\n\n`tests/utils.test.js`\n\n## Acceptance criteria\n\n- [ ] Add a dedicated test using duplicate category values in unsorted order.\n- [ ] Assert unique categories and alphabetical ordering without depending on production resource data.\n- [ ] Run `npm run check` and report the result.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: tests"
+      ]
+    },
+    {
+      "id": "test-description-search",
+      "title": "Add regression tests for description-only search matches",
+      "body": "## Goal\n\nSearch claims to look beyond titles and tags; the behavior needs explicit regression coverage.\n\n## Starting point\n\n`tests/utils.test.js`\n\n## Acceptance criteria\n\n- [ ] Create fixture resources where only `description` includes the target.\n- [ ] Assert case-insensitive matching and a negative case.\n- [ ] Do not edit the production resource directory just to satisfy tests.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: tests"
+      ]
+    },
+    {
+      "id": "test-filter-order",
+      "title": "Test that searching preserves input resource order",
+      "body": "## Goal\n\nSearching should not unexpectedly reorder resources or mutate source data.\n\n## Starting point\n\n`tests/utils.test.js`\n\n## Acceptance criteria\n\n- [ ] Create a small ordered resource fixture.\n- [ ] Assert matching results preserve input order and source array stays unchanged.\n- [ ] Run the existing check script.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: tests"
+      ]
+    },
+    {
+      "id": "test-category-negative",
+      "title": "Test unknown category filters produce no results",
+      "body": "## Goal\n\nFiltering an unknown category should not accidentally return every item.\n\n## Starting point\n\n`tests/utils.test.js`\n\n## Acceptance criteria\n\n- [ ] Use a non-existent category against a known fixture.\n- [ ] Assert zero matches with both empty and nonempty query.\n- [ ] Keep the test separate from the current happy-path coverage.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: tests"
+      ]
+    },
+    {
+      "id": "test-escape-unicode",
+      "title": "Test HTML escaping preserves legitimate Unicode text",
+      "body": "## Goal\n\nLearning content may contain accented characters, non-Latin text and emoji.\n\n## Starting point\n\n`tests/utils.test.js`\n\n## Acceptance criteria\n\n- [ ] Add tests using Hindi text, accented letters and emoji mixed with angle brackets.\n- [ ] Assert markup-sensitive characters are escaped but valid Unicode remains intact.\n- [ ] Avoid snapshotting implementation-specific HTML.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: tests"
+      ]
+    },
+    {
+      "id": "test-missing-tags",
+      "title": "Make resource search handle malformed missing tags gracefully",
+      "body": "## Goal\n\nA draft resource may lack its tags while being reviewed; search should not crash the whole page.\n\n## Starting point\n\n`src/utils.js / tests/utils.test.js`\n\n## Acceptance criteria\n\n- [ ] Add a regression test demonstrating search with `tags` absent or null.\n- [ ] Update the filter helper to handle those values safely.\n- [ ] Keep content validation strict so invalid cards are still rejected before merging.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "help wanted",
+        "difficulty: intermediate",
+        "area: tests"
+      ]
+    },
+    {
+      "id": "resource-github-security",
+      "title": "Add GitHub's official secure repository guidance",
+      "body": "## Goal\n\nContributors should understand why repositories must not contain tokens or secrets.\n\n## Starting point\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add a unique official GitHub security documentation resource.\n- [ ] Explain a practical first step such as reviewing repository secret-handling guidance.\n- [ ] Use an existing category, and verify the destination before submission.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-hf-agents",
+      "title": "Add Hugging Face Agents Course to the directory",
+      "body": "## Goal\n\nStudents interested in AI agents need a structured learning reference.\n\n## Starting point\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add one official Hugging Face Agents Course link.\n- [ ] Mention prerequisites or recommended starting level accurately.\n- [ ] Use a unique URL and ID, then run the content checker.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-mlflow",
+      "title": "Add an official MLflow introduction",
+      "body": "## Goal\n\nStudents tracking experiments may benefit from learning about reproducibility.\n\n## Starting point\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add an official MLflow introductory documentation resource.\n- [ ] Explain experiments and tracking without suggesting every beginner must install it.\n- [ ] Provide an achievable first step and a correct level.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-pytorch-data",
+      "title": "Add a PyTorch data-loading tutorial",
+      "body": "## Goal\n\nExisting PyTorch entry covers basics but not the workflow of loading data.\n\n## Starting point\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add a distinct official PyTorch dataset/DataLoader tutorial URL.\n- [ ] Explain the specific data-loading topic rather than duplicating the existing PyTorch introduction.\n- [ ] Verify level, first step and unique ID.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-hf-evaluate",
+      "title": "Add Hugging Face Evaluate library documentation",
+      "body": "## Goal\n\nHelp students discover reusable metrics and responsible model evaluation.\n\n## Starting point\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add one official Hugging Face Evaluate resource.\n- [ ] Describe a task-specific metric and its limitations without overclaiming.\n- [ ] Ensure it is not a duplicate URL and passes validation.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "resource-openrefine",
+      "title": "Add an introductory OpenRefine data-cleaning guide",
+      "body": "## Goal\n\nBeginners need ways to inspect and clean tabular data before ML.\n\n## Starting point\n\n`src/data/resources.js`\n\n## Acceptance criteria\n\n- [ ] Add an official OpenRefine introduction or getting-started link.\n- [ ] Explain how it differs from training a model.\n- [ ] Include a concrete starter exercise and validate the content.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: content"
+      ]
+    },
+    {
+      "id": "docs-codespaces",
+      "title": "Create a browser-only GitHub Codespaces setup walkthrough",
+      "body": "## Goal\n\nStudents without a local Node installation should understand the optional Codespaces route.\n\n## Starting point\n\n`docs/CODESPACES_SETUP.md`\n\n## Acceptance criteria\n\n- [ ] Explain how to open a Codespace only when the account is eligible and quota is available.\n- [ ] Show how to run `npm run check` and preview the static site.\n- [ ] Include a free GitHub web-editor fallback and avoid implying Codespaces is unlimited.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-learning-route",
+      "title": "Design a 45-minute beginner learning route through the site",
+      "body": "## Goal\n\nNew visitors benefit from a sequence instead of a wall of resources.\n\n## Starting point\n\n`docs/BEGINNER_LEARNING_ROUTE.md`\n\n## Acceptance criteria\n\n- [ ] Create three short learning stages with links to existing topics/resources.\n- [ ] Give each stage one hands-on action and an approximate duration.\n- [ ] Require no paid services, API keys or personal datasets.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-glossary-style",
+      "title": "Write a glossary editorial style guide",
+      "body": "## Goal\n\nMany contributors will add terms; definitions need consistent voice and precision.\n\n## Starting point\n\n`docs/GLOSSARY_STYLE_GUIDE.md`\n\n## Acceptance criteria\n\n- [ ] Describe how long definitions should be, how to introduce jargon, and how to avoid false certainty.\n- [ ] Include one good and one deliberately poor fictional example with an explanation.\n- [ ] Point to `src/data/glossary.js` and content validation.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-first-step-style",
+      "title": "Explain how to write actionable resource first-step instructions",
+      "body": "## Goal\n\nA useful resource card tells a beginner exactly what to do next.\n\n## Starting point\n\n`docs/RESOURCE_FIRST_STEPS.md`\n\n## Acceptance criteria\n\n- [ ] Define concrete first steps versus vague phrases like 'Learn more'.\n- [ ] Provide three sample before/after first steps using generic scenarios.\n- [ ] Mention link verification and the resource data schema.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-issue-claim-etiquette",
+      "title": "Create student-friendly issue claiming etiquette guidance",
+      "body": "## Goal\n\nAt up to 75 participants, accidental duplicated efforts waste the sprint.\n\n## Starting point\n\n`docs/ISSUE_CLAIMING.md`\n\n## Acceptance criteria\n\n- [ ] Explain claim comments, waiting for confirmation, and releasing an issue when blocked.\n- [ ] Show example comments for claiming and releasing.\n- [ ] Emphasize that issue quantity does not determine swag eligibility.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
+    },
+    {
+      "id": "docs-bug-report-guide",
+      "title": "Show how to write a reproducible bug report",
+      "body": "## Goal\n\nBeginners should be able to describe what failed before attempting a fix.\n\n## Starting point\n\n`docs/GOOD_BUG_REPORT.md`\n\n## Acceptance criteria\n\n- [ ] Provide a short fictional bug report with steps, expected result, actual result and environment.\n- [ ] Explain when to attach a screenshot without exposing personal data.\n- [ ] Link to repository issue templates and distinguish bugs from feature proposals.\n- [ ] Run `npm run check` (or have a mentor run it) and include manual verification where relevant.\n\n## How to claim\n\nComment **I'd like to work on this** and wait for mentor confirmation. Please claim only one issue at a time. Open a focused PR, link the issue, explain what you tested, and respond to review feedback. The goal is useful contributions, not PR counts.",
+      "labels": [
+        "hack-day",
+        "good first issue",
+        "difficulty: beginner",
+        "area: docs"
+      ]
     }
   ]
 }

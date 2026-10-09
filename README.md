@@ -41,6 +41,8 @@ npm run check
 - [`src/utils.js`](src/utils.js): testable resource filtering
 - [`tests/`](tests/): automated tests
 
+For the DDUGU event, mentors and organizers can use the [Track B playbook](docs/HACK_DAY_PLAYBOOK.md).
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [the issue tracker](https://github.com/ThunderKhan/open-source-ai-compass/issues) to get started. Before claiming an issue, read its acceptance criteria and leave a comment. Please do not submit duplicate, cosmetic-only, or machine-generated PR spam.
 
 ## For organizers: create the issue backlog

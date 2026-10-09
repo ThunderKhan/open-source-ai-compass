@@ -45,15 +45,17 @@ For the DDUGU event, mentors and organizers can use the [Track B playbook](docs/
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [the issue tracker](https://github.com/ThunderKhan/open-source-ai-compass/issues) to get started. Before claiming an issue, read its acceptance criteria and leave a comment. Please do not submit duplicate, cosmetic-only, or machine-generated PR spam.
 
-## For organizers: create the issue backlog
+## For organizers: manage the issue backlog
 
-This repository includes 25 ready-to-run issues and custom labels in `scripts/issue-backlog.json`. To create them without installing any local dependencies:
+This repository includes 100 scoped contribution issues and custom labels in `scripts/issue-backlog.json`. To create them without installing any local dependencies:
 
-1. In the repository, open **Actions → Seed Hack Day Issues → Run workflow**.
-2. The workflow creates the labels and issues; repeated runs skip issues with the same ID.
+1. In the repository, open **Actions → Seed Hack Day Issues → Run workflow** if any seeded issues or labels need restoring.
+2. The workflow creates missing labels and issues; repeated runs skip issues with the same stable ID. All 100 were published before the DDUGU event.
 3. Set repository **Settings → Actions → General → Workflow permissions** to allow read and write if organizational defaults restrict `GITHUB_TOKEN`. If running is restricted, use the GitHub CLI alternative below.
 
 For the GitHub CLI: install and authenticate `gh`, then run `gh auth login`, followed by `node scripts/seed-issues.mjs` with `GITHUB_TOKEN` and `GITHUB_REPOSITORY` provided in the environment. The GitHub workflow is recommended.
+
+**For event-day triage:** Have students claim only one issue at a time. Many issues touch the same source files, so mentors should coordinate independent edits and expect merge conflicts. Not every open task will be completed during a two-hour sprint; unfinished issues remain legitimate backlog items. Do not reward PR volume.
 
 ## Host it on GitHub Pages
 
